@@ -58,6 +58,7 @@ public class Deskripsi extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Data Berhasil dihapus", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(getApplicationContext(), ListDataActivity.class);
+                finish();
                 startActivity(intent);
             }
         });

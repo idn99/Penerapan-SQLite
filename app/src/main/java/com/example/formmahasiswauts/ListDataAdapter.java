@@ -1,5 +1,6 @@
 package com.example.formmahasiswauts;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -44,6 +45,7 @@ public class ListDataAdapter extends RecyclerView.Adapter<ListDataAdapter.ViewHo
                 Intent intent = new Intent(context, Deskripsi.class);
                 intent.putExtra("id", mhs.get(position).getId());
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                ListDataActivity.fa.finish();
                 context.startActivity(intent);
             }
         });
